@@ -10,6 +10,8 @@ Explores:
 # Sets
 ## Introduction to Sets
 
+a set is a group of elements that are unordered and do not contain duplicates. Although it may seem that the usefulness of this data structure is limited, it can actually be very helpful for organizing items and performing set mathematics.
+
 ## Creating a Set
 ## Creating a Frozenset
 ## Adding to a Set
