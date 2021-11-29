@@ -1,5 +1,5 @@
 # specialized-collections
-## A Python course walkthrough on specialized collections
+A Python course walkthrough on specialized collections
 
 # Sets
 ## Introduction to Sets
