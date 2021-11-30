@@ -25,6 +25,17 @@ will output:
 ```
 {'country', 'punk', 'pop', 'rap'} # element/index switches are due to sets being un-ordered
 ```
+##### Set Comprehensions:
+```
+items = ['country', 'punk', 'rap', 'techno', 'pop', 'latin']
+
+music_genres = {category for category in items if category[0] == 'p'}
+print(music_genres)
+```
+Would output a set containing all elements from items starting with the letter 'p':
+```
+{'punk', 'pop'}
+```
 ## Creating a Frozenset
 ## Adding to a Set
 ## Removing From a Set
