@@ -14,8 +14,17 @@ a set is a group of elements that are unordered and do not contain duplicates. A
 
 ## Creating a Set
 - In Python, there are multiple ways to create a set.
-### Creating a set with curly braces
+##### Creating a set with curly braces
 ```music_genres = {'country', 'punk', 'rap', 'techno', 'pop', 'latin'}```
+##### Creating a set from a list using set()
+```
+music_genres_2 = set(['country', 'punk', 'rap', 'techno', 'pop', 'latin'])
+print(music_genres_3)
+```
+will output:
+```
+{'country', 'punk', 'pop', 'rap'} # element/index switches are due to sets being un-ordered
+```
 ## Creating a Frozenset
 ## Adding to a Set
 ## Removing From a Set
