@@ -8,4 +8,13 @@ user_tag_data = {'Lowkey Space': ['party', 'synth', 'fast', 'upbeat'],
                  'Wait For Limit': ['romance', 'chill', 'rap', 'rhythmic'], 
                  'Stomping Cue': ['country', 'swing', 'party', 'instrumental']}
 
-# Write your code below!
+# checkpoint 1
+new_song_data = {}
+
+# checkpoint 2
+for key, val in song_data.items():
+  song_tag_set = set(val)
+  user_tag_set = set(user_tag_data[key])
+  new_song_data[key] = song_tag_set | user_tag_set
+
+print(new_song_data)
