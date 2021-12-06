@@ -8,4 +8,16 @@ friend_song_history = {'Lowkey Space': ['electronic', 'dance', 'synth', 'upbeat'
                      'Wait For Limit': ['rap', 'upbeat', 'romance', 'relationship'],
                      'Double Lights': ['electronic', 'chill', 'relaxing', 'piano', 'synth']}
 
-# Write your code below!
+# Checkpoint 1
+user_tags = set()
+for key, val in user_song_history.items():
+  user_tags.update(set(val))
+
+# Checkpoint 2
+friend_tags = set()
+for key, val in friend_song_history.items():
+  friend_tags.update(set(val))
+
+# Checkpoint 3
+unique_tags = set(user_tags) ^ set(friend_tags)
+print(unique_tags)
