@@ -88,7 +88,9 @@ Notice that when the elements are printed, they are not printed in the same orde
 There are two methods for removing specific elements from a set:
 
 The .remove() method searches for an element within the set and removes it if it exists, otherwise, a KeyError is thrown.
-```# Given a list of song tags
+
+```
+#### Given a list of song tags
 song_tags = {'guitar', 'acoustic', 'folk', 'country', 'live', 'blues'}
  
 # Remove an existing element
@@ -114,20 +116,20 @@ KeyError: 'fiddle'
 ```
 The .discard() method works the same way but does not throw an exception if an element is not present.
 ```
- # Given a list of song tags
+ #### Given a list of song tags
 song_tags = {'guitar', 'acoustic', 'folk', 'country', 'live', 'blues'}
  
-# Try removing a non-existent element but with the discard method
+#### Try removing a non-existent element but with the discard method
 song_tags.discard('guitar')
 print(song_tags)
  
-# Try removing a non-existent element but with the discard method
+#### Try removing a non-existent element but with the discard method
 song_tags.discard('fiddle')
 print(song_tags)
- ```
+```
  would output:
 ``` 
- {'folk', 'acoustic', 'blues', 'live', 'country'}
+{'folk', 'acoustic', 'blues', 'live', 'country'}
 {'folk', 'acoustic', 'blues', 'live', 'country'}
 ```
 
