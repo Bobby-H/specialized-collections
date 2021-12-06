@@ -10,4 +10,15 @@ song_data = {'Retro Words': ['pop', 'warm', 'happy', 'electronic', 'synth'],
 user_recent_songs = {'Retro Words': ['pop', 'warm', 'happy', 'electronic', 'synth'],
                      'Lowkey Space': ['electronic', 'dance', 'synth', 'upbeat']}
 
-# Write your code below!
+# Checkpoint 1
+tags_int = set(user_recent_songs['Retro Words']) & set(user_recent_songs['Lowkey Space'])
+
+# Checkpoint 2
+recommended_songs = {}
+for key, val in song_data.items():
+    for tag in val:
+        if tag in tags_int:
+            if key not in user_recent_songs:
+                recommended_songs[key] = val
+
+print(recommended_songs)
