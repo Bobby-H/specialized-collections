@@ -75,6 +75,7 @@ print(song_tags)
 Would output:
 
 ```{'acoustic', 'folk', 'country', 'live', 'blues'}```
+
 There are a few things to note about adding to a set:
 
 Neither of these methods will add a duplicate item to a set.
@@ -84,6 +85,7 @@ A frozenset can not have any items added to it and so neither of these methods w
 Notice that when the elements are printed, they are not printed in the same order in which they entered the set. This is because set and frozenset containers are unordered.
 
 ## Removing From a Set
+
 ## Finding Elements in a Set
 ## Introduction to Set Operations
 ## Set Union
